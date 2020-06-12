@@ -5,7 +5,7 @@ const Search = () => (
 
   <section className='main'>
     <h2 className='main__titulo'>Video Project With REACTJS</h2>
-    <input className='input' type='text' placeholder='Buscar...' />
+    <input className='input' type='text' placeholder='Search...' />
   </section>
 
 );

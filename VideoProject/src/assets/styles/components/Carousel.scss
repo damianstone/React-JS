@@ -1,0 +1,26 @@
+.carousel {
+    width:100%;
+    overflow: scroll;
+    padding-left: 30px;
+    position:relative; /*todos los elementos que esten dentro se van a poner en posicion a este elemento*/
+    overflow: hidden;
+
+}
+
+.carousel__container {
+    white-space: nowrap; /*para que todos los elementos sigan en "linea infinita" y no se posicionen abajo*/
+    margin: 70px 0px;
+    padding-bottom: 10px;
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+}
+
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5); /* para que se agrande la imagen al pasar el curson */
+    opacity:1;
+}
