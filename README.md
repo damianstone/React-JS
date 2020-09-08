@@ -1,2 +1,3 @@
 # React-JS
-Notes and some basic projects for to start to learn about React-JS 
+First project using React JS
+If you wanna see it "npm run start" ;)
