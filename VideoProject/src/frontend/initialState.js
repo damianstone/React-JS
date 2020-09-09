@@ -1,12 +1,3 @@
-// ESTE ES EL ARCHIVO PRINCIPAL DONDE SE JUNTAN LOS COMPONENTES Y SE LLEVA HACIA EL DOM = WEB
-
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, compose } from 'redux';
-import reducer from './reducers';
-import App from './routes/App';
-
 const initialState = {
   'user': {},
   'playing': {},
@@ -175,16 +166,4 @@ const initialState = {
 
 };
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
-const store = createStore(reducer, initialState, composeEnhancers());
-
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-
-  document.getElementById('app'),
-
-); // metodo render es lo que lleva todo al navegador
-
+export default initialState;
