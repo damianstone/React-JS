@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack-cli --config webpack.config.js",
     "start:dev": "nodemon src/server/index"
   },
   "keywords": [],
@@ -28,6 +27,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.0",
     "express": "^4.17.1",
+    "helmet": "^4.1.0",
     "history": "^5.0.0",
     "ignore-styles": "^5.0.1",
     "md5": "^2.2.1",
@@ -41,16 +41,17 @@
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
-    "webpack": "^4.44.1"
+    "webpack": "^4.44.1",
+    "webpack-manifest-plugin": "^2.2.0"
   },
   "devDependencies": {
+    "compression-webpack-plugin": "^5.0.2",
     "css-loader": "^3.5.3",
     "file-loader": "^5.1.0",
-    "html-loader": "^1.1.0",
-    "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
+    "terser-webpack-plugin": "^4.1.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.11.0",
