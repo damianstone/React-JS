@@ -17,7 +17,7 @@ const Home = ({ myList, trends, originals, search }) => {
       {search.length > 1 && (
         <CategoriesTitle title='Search'>
           <Carousel>
-            {search.map((item) => (
+            {search.map(item => (
               <CarouselItem
                 key={item.id}
                 {...item}
@@ -30,7 +30,7 @@ const Home = ({ myList, trends, originals, search }) => {
       {myList?.length > 0 && (
         <CategoriesTitle title='My List'>
           <Carousel>
-            {myList?.map((item) => (
+            {myList?.map(item => (
               <CarouselItem
                 key={item.id}
                 {...item}
@@ -43,7 +43,7 @@ const Home = ({ myList, trends, originals, search }) => {
 
       <CategoriesTitle title='Trends'>
         <Carousel>
-          {trends.map((item) => (
+          {trends.map(item => (
             <CarouselItem key={item.id} {...item} />
           ))}
         </Carousel>
@@ -51,7 +51,7 @@ const Home = ({ myList, trends, originals, search }) => {
 
       <CategoriesTitle title='Recommended for you'>
         <Carousel>
-          {originals.map((item) => (
+          {originals.map(item => (
             <CarouselItem key={item.id} {...item} />
           ))}
         </Carousel>

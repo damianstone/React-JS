@@ -6,7 +6,8 @@ import NotFound from './NotFound';
 import '../assets/styles/components/Player.scss';
 
 const Player = (props) => {
-  const { id } = props.match.params;
+  const { match } = props;
+  const { id } = match.params;
   const { playing } = props;
   const [loading, setLoading] = useState(true);
   const hasPlaying = Object.keys(playing).length > 0;
