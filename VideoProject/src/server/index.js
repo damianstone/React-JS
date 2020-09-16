@@ -1,4 +1,5 @@
 require('ignore-styles'); //=> no se pueden cargar las hojas de estilo en el lado del servidor
+require('@babel/polyfill');
 
 require('@babel/register')({
   presets: [
